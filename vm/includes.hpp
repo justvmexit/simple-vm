@@ -34,7 +34,6 @@ namespace simplevm
         OP_JMP,
         OP_OUT, // out hexadecimal
         OP_OUTI, // out decimal
-        OP_SET,
         OP_PAUSE,
         OP_HALT,
         OP_JE,
