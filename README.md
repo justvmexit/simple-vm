@@ -1,5 +1,5 @@
 # Simple VM
-A simple virtual machine written in C++ using it's own low level language with high level features like sleep, etc.
+A simple virtual machine written in C++ using it's own low level language with high level features from host machine like Sleep, etc.
 
 # Language
 I have written a simple assembly like language called `Simple Virtual Emulation` and file extension is `.svm` which contains a few high level instructions.
@@ -20,5 +20,8 @@ I have written a simple assembly like language called `Simple Virtual Emulation`
 
 # Host
 This is made for Windows systems but can easily be ported to UNIX.
-The only functionality I use that is Windows only is the `Kernel32::Sleep` function.
+The only host functionality I use that is Windows only is the `Kernel32::Sleep` function.
 
+# Uses
+There is really no practical uses for this other than for fun unless you do a few upgrades to it.
+Have fun and good day.
