@@ -1,0 +1,11 @@
+nop
+movi r1 50
+movi r2 0
+je r2 r1
+jmp 6
+add r2
+jmp 3
+movi r3 69
+jne r3 r2
+jmp 3
+outi r3

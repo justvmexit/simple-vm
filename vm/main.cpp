@@ -24,23 +24,34 @@ simplevm::registers string_to_register(std::string data)
 
 std::string register_to_string(simplevm::registers data)
 {
-	if (data == simplevm::R0) return "R0";
-	if (data == simplevm::R1) return "R1";
-	if (data == simplevm::R2) return "R2";
-	if (data == simplevm::R3) return "R3";
-	if (data == simplevm::R4) return "R4";
-	if (data == simplevm::R5) return "R5";
-	if (data == simplevm::R6) return "R6";
-	if (data == simplevm::R7) return "R7";
-	if (data == simplevm::R8) return "R8";
-
-	return "R0";
+	switch (data)
+	{
+	case simplevm::R0:
+		return "R0";
+	case simplevm::R1:
+		return "R1";
+	case simplevm::R2:
+		return "R2";
+	case simplevm::R3:
+		return "R3";
+	case simplevm::R4:
+		return "R4";
+	case simplevm::R5:
+		return "R5";
+	case simplevm::R6:
+		return "R6";
+	case simplevm::R7:
+		return "R7";
+	case simplevm::R8:
+		return "R8";
+	default:
+		return "R0";
+	}
 }
 
 
 std::uint32_t main(std::uint32_t argc, char** argv)
 {
-	argc++;
 	if (argc < 2)
 	{
 		std::printf("SimpleVM: not enough arguments..");
