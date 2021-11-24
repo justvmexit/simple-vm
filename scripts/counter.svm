@@ -1,0 +1,8 @@
+nop
+movi r2 15
+movi r1, 0
+add r1
+je r1 r2
+jmp 6
+jmp 2
+out r2

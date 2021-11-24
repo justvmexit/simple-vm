@@ -1,0 +1,6 @@
+nop
+mov r1 0
+add r1
+int 1000
+outi r1
+jmp 1
